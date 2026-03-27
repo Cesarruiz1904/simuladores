@@ -1,0 +1,5 @@
+- Información de contacto en un footer en la web?
+- arriba izq link a un html que hable del equipo de simulación o esas cosas?
+- embellecer un poco la página web
+-en cada simulador, explicar por una parte que se ha hecho y por otra parte como se hace la tecnica
+a simular

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Recipe Index</title>
+    <title>Lista Simuladores Marca UPNA</title>
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -14,7 +14,7 @@
             color: #222;
         }
         .container {
-            max-width: 700px;
+            max-width: 600px;
             margin: 40px auto;
             padding: 24px;
             background: #fff;
@@ -31,7 +31,7 @@
             flex-direction: column;
             gap: 18px;
         }
-        .recipe-card {
+        .simulador-list {
             padding: 18px 24px;
             border-radius: 8px;
             background: #f5f5f5;
@@ -40,25 +40,58 @@
             color: inherit;
             box-shadow: 0 1px 4px rgba(0,0,0,0.03);
         }
-        .recipe-card:hover {
+        .simulador-list:hover {
             background: #eaeaea;
             box-shadow: 0 4px 16px rgba(0,0,0,0.08);
         }
-        .recipe-title {
+        .simulador-titulo {
             font-size: 1.2rem;
             font-weight: 500;
+            position:relative;
+            bottom:25px;
+        }
+        .logo {
+            display: block;
+            position: relative;
+            left: 500px;
+            top: 30px;
+            margin: 0 auto 24px auto;
+            max-width: 100%;
+            border-radius: 8px;
+            width:200px;
+        }
+        .imgportada1{
+            position: relative;
+            left: 235px;
+            width: 100px;
+        }
+        .imgportada2{
+            position: relative;
+            left: 110px;
+            width: 100px;
+        }
+        .vacio{
+            height: 200px;
         }
     </style>
 </head>
 <body>
+    <img src="/img/logo_upna.png" class="logo">
     <div class="container">
-        <h1>My Recipes</h1>
+        <h1>SIMULADORES MARCA UPNA</h1>
+
         <div class="recipe-list">
-            <a class="recipe-card" href="recipe1.html">
-                <span class="recipe-title">Classic Pancakes</span>
+            <a class="simulador-list" href="puncion_talon.html">
+                <span class="simulador-titulo">Simulador Punción Talón</span>
+                <img src="/img/portada_talon.jpg" class="imgportada1">
             </a>
-            <!-- Add more recipes here -->
+            <a class="simulador-list" href="recambio_drenaje_pulmonar.html">
+                <span class="simulador-titulo">Recambio Simulador Drenaje Pulmonar</span>
+                <img src="/img/portada_drenaje.png" class="imgportada2">
+            </a>
         </div>
+
+
     </div>
 </body>
 </html>
