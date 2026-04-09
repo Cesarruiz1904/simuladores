@@ -14,16 +14,26 @@
         }
         .container {
             max-width: 700px;
+            width: min(92vw, 700px);
             margin: 40px auto;
             padding: 24px;
             background: #fff;
             border-radius: 12px;
             box-shadow: 0 2px 16px rgba(0,0,0,0.06);
         }
+        @media (max-width: 500px) {
+            .container {
+                width: 90vw;
+                padding: 18px;
+            }
+        }
         h1 {
             text-align: center;
             font-weight: 600;
             margin-bottom: 16px;
+        }
+        h3 {
+            text-align: center;
         }
         .recipe-img {
             display: block;
@@ -120,55 +130,57 @@
         <h1>Simulador de punción talonaria para neonatos</h1>
         <img class="recipe-img" src="img/portada_talon.jpg" alt="Talón de Neonato">
         <p class="explanation">La punción del talón es una técnica médica utilizada en neonatos para obtener una muestra de sangre capilar. Esta muestra se utiliza para realizar pruebas de cribado neonatal, que permiten detectar precozmente enfermedades metabólicas, endocrinas, genéticas y otras condiciones que pueden afectar la salud del recién nacido.</p>
+        <p>El procedimiento implica realizar una pequeña punción en el talón del neonato utilizando una lanceta estéril. Es importante seguir los pasos adecuados para garantizar la seguridad y el bienestar del bebé durante el proceso.</p>
+        <h3>Procedimiento a seguir</h3>
         <br>
         <hr>
         <br>
         <div class="steps">
             <div class="step">
                 <div class="step-container">
-                    <img class="step-img" src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=300&q=80" alt="Materiales médicos">
+                    <img class="step-img" src="img/talon1.jpg" alt="Materiales médicos">
                     <div class="step-text">
-                        <strong>Paso 1:</strong> Preparar el equipo y materiales necesarios: lanceta estéril, alcohol, gasas, vendaje y tubo para recoger la sangre.
+                        <strong>Paso 1:</strong> Preparar el equipo y materiales necesarios: lanceta estéril, alcohol, gasas, tarjetas de recolección, guantes y protección personal.
                     </div>
                 </div>
             </div>
+            <hr>
+            <br>
             <div class="step">
                 <div class="step-container">
-                    <img class="step-img" src="https://images.unsplash.com/photo-1544569226-44165ff6e324?auto=format&fit=crop&w=300&q=80" alt="Posicionamiento del neonato">
+                    <img class="step-img" src="img/talon2.png" alt="Limpieza del área">
                     <div class="step-text">
-                        <strong>Paso 2:</strong> Posicionar al neonato correctamente, asegurándose de que esté cómodo y seguro. Sostener el pie firmemente.
+                        <strong>Paso 2:</strong> Limpiar y desinfectar el área del talón con alcohol para prevenir infecciones.
                     </div>
                 </div>
             </div>
+            <hr>
+            <br>
             <div class="step">
                 <div class="step-container">
-                    <img class="step-img" src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=300&q=80" alt="Limpieza del área">
+                    <img class="step-img" src="img/talon3.png" alt="Punción con lanceta">
                     <div class="step-text">
-                        <strong>Paso 3:</strong> Limpiar y desinfectar el área del talón con alcohol para prevenir infecciones.
+                        <strong>Paso 3:</strong> Realizar la punción con lanceta en la superficie plantar lateral o medial, a una profundidad adecuada para obtener sangre capilar. <p>Hacer la punción en un solo movimiento rápido y seguro, en dirección casi perpendicular a la superficie del pie.</p> Evitar el área central del talón y la curvatura posterior para prevenir lesiones en nervio o huesos.
                     </div>
                 </div>
             </div>
+            <hr>
+            <br>
             <div class="step">
                 <div class="step-container">
-                    <img class="step-img" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=300&q=80" alt="Punción con lanceta">
+                    <img class="step-img" src="img/talon4.png" alt="Recogida de sangre">
                     <div class="step-text">
-                        <strong>Paso 4:</strong> Realizar la punción con lanceta en el lateral del talón, a una profundidad adecuada para obtener sangre capilar.
+                        <strong>Paso 4:</strong> Recoger las gotas de sangre la tarjeta de filtro, formando gotas grandes y evitando que el pie toque la tarjeta.
                     </div>
                 </div>
             </div>
+            <hr>
+            <br>
             <div class="step">
                 <div class="step-container">
-                    <img class="step-img" src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=300&q=80" alt="Recogida de sangre">
+                    <img class="step-img" src="img/talon5.png" alt="Aplicación de presión">
                     <div class="step-text">
-                        <strong>Paso 5:</strong> Recoger las gotas de sangre en el tubo o tarjeta de filtro, evitando tocar la sangre directamente.
-                    </div>
-                </div>
-            </div>
-            <div class="step">
-                <div class="step-container">
-                    <img class="step-img" src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?auto=format&fit=crop&w=300&q=80" alt="Aplicación de presión">
-                    <div class="step-text">
-                        <strong>Paso 6:</strong> Aplicar presión con una gasa estéril durante unos minutos y cubrir con vendaje para detener el sangrado.
+                        <strong>Paso 5:</strong> Aplicar presión con una gasa estéril durante unos minutos y cubrir para detener el sangrado.
                     </div>
                 </div>
             </div>
