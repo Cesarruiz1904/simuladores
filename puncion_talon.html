@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
-            background: #fafafa;
+            background: #efefef;
             margin: 0;
             padding: 0;
             color: #222;
@@ -35,7 +35,33 @@
             margin-top: 24px;
         }
         .step {
-            margin-bottom: 18px;
+            margin-bottom: 24px;
+        }
+        .step-container {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+        .step-img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 8px;
+            flex-shrink: 0;
+        }
+        .step-text {
+            flex: 1;
+        }
+        @media (max-width: 768px) {
+            .step-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .step-img {
+                width: 100%;
+                height: auto;
+                max-height: 200px;
+            }
         }
         .back-link {
             display: inline-block;
@@ -47,15 +73,41 @@
         .back-link:hover {
             text-decoration: underline;
         }
+        .footer {
+            background: #fff;
+            padding: 24px;
+            text-align: center;
+            border-top: 1px solid #eee;
+            margin-top: 40px;
+        }
+        .about-btn {
+            background: #485e76;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 16px;
+            font-size: 1rem;
+        }
+        .about-btn:hover {
+            background: #485e76;
+        }
         .logo {
             display: block;
-            position: sticky;
-            left: 1040px;
-            top: 30px;
-            margin: 0 auto 24px auto;
+            margin: 24px auto 24px auto;
             max-width: 100%;
+            width: 200px;
             border-radius: 8px;
-            width:200px;
+        }
+        .footer-logo {
+            max-width: 250px;
+            margin-top: 16px;
+        }
+        .footer-title {
+            font-weight: 600;
+            text-align: center;
+            margin-top: 16px;
         }
     </style>
 </head>
@@ -66,24 +118,74 @@
     <div class="container">
         <a class="back-link" href="index.html">&larr; Lista de simuladores</a>
         <h1>Simulador de punción talonaria para neonatos</h1>
-        <img class="recipe-img" src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=700&q=80" alt="Classic Pancakes">
+        <img class="recipe-img" src="img/portada_talon.jpg" alt="Talón de Neonato">
+        <p class="explanation">La punción del talón es una técnica médica utilizada en neonatos para obtener una muestra de sangre capilar. Esta muestra se utiliza para realizar pruebas de cribado neonatal, que permiten detectar precozmente enfermedades metabólicas, endocrinas, genéticas y otras condiciones que pueden afectar la salud del recién nacido.</p>
+        <br>
+        <hr>
+        <br>
         <div class="steps">
             <div class="step">
-                <strong>Step 1:</strong> In a bowl, mix 1 cup flour, 2 tbsp sugar, 1 tsp baking powder, and a pinch of salt.
+                <div class="step-container">
+                    <img class="step-img" src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=300&q=80" alt="Materiales médicos">
+                    <div class="step-text">
+                        <strong>Paso 1:</strong> Preparar el equipo y materiales necesarios: lanceta estéril, alcohol, gasas, vendaje y tubo para recoger la sangre.
+                    </div>
+                </div>
             </div>
             <div class="step">
-                <strong>Step 2:</strong> In another bowl, whisk 1 cup milk, 1 egg, and 2 tbsp melted butter.
+                <div class="step-container">
+                    <img class="step-img" src="https://images.unsplash.com/photo-1544569226-44165ff6e324?auto=format&fit=crop&w=300&q=80" alt="Posicionamiento del neonato">
+                    <div class="step-text">
+                        <strong>Paso 2:</strong> Posicionar al neonato correctamente, asegurándose de que esté cómodo y seguro. Sostener el pie firmemente.
+                    </div>
+                </div>
             </div>
             <div class="step">
-                <strong>Step 3:</strong> Combine wet and dry ingredients. Stir until just mixed.
+                <div class="step-container">
+                    <img class="step-img" src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=300&q=80" alt="Limpieza del área">
+                    <div class="step-text">
+                        <strong>Paso 3:</strong> Limpiar y desinfectar el área del talón con alcohol para prevenir infecciones.
+                    </div>
+                </div>
             </div>
             <div class="step">
-                <strong>Step 4:</strong> Heat a non-stick pan over medium heat. Pour batter to form pancakes. Cook until bubbles form, flip, and cook until golden.
+                <div class="step-container">
+                    <img class="step-img" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?auto=format&fit=crop&w=300&q=80" alt="Punción con lanceta">
+                    <div class="step-text">
+                        <strong>Paso 4:</strong> Realizar la punción con lanceta en el lateral del talón, a una profundidad adecuada para obtener sangre capilar.
+                    </div>
+                </div>
             </div>
             <div class="step">
-                <strong>Step 5:</strong> Serve warm with your favorite toppings.
+                <div class="step-container">
+                    <img class="step-img" src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=300&q=80" alt="Recogida de sangre">
+                    <div class="step-text">
+                        <strong>Paso 5:</strong> Recoger las gotas de sangre en el tubo o tarjeta de filtro, evitando tocar la sangre directamente.
+                    </div>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-container">
+                    <img class="step-img" src="https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?auto=format&fit=crop&w=300&q=80" alt="Aplicación de presión">
+                    <div class="step-text">
+                        <strong>Paso 6:</strong> Aplicar presión con una gasa estéril durante unos minutos y cubrir con vendaje para detener el sangrado.
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
+    <div class="footer">
+        <a href="puncion_talon_about.html" class="about-btn">Acerca de este simulador</a>
+
+        <h2>Centro de simulación de la FCCS de la UPNA</h2>
+        <p class="footer-title">Información de contacto: </p>
+        <p>📧 Email: unidadeducacion.salud@unavarra.es</p>
+        <p>📞 Teléfono: +34 948 16 6206</p>
+        <p>📍 Edificio Facultad de Ciencias de la Salud, Avda Barañain s/n 2ªplanta sala 29, Pamplona</p>
+        <p>🌐 Web: <a href="https://www.unavarra.es/sites/fac-cienciasdelasalud/la-facultad/unidad-de-educacion-salud.html" target="_blank">https://www.unavarra.es/sites/fac-cienciasdelasalud/la-facultad/unidad-de-educacion-salud.html</a></p>
+        <img src="img/upna.png" alt="Logo UPNA" class="footer-logo">
+    </div>
+
 </body>
 </html>
