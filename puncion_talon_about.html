@@ -3,47 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acerca de este simulador - Punción Talón</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Arial, sans-serif;
-            background: #fafafa;
-            margin: 0;
-            padding: 0;
-            color: #222;
-        }
-        .container {
-            max-width: 700px;
-            margin: 40px auto;
-            padding: 24px;
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 2px 16px rgba(0,0,0,0.06);
-        }
-        h1 {
-            text-align: center;
-            font-weight: 600;
-            margin-bottom: 16px;
-        }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 24px;
-            color: #888;
-            text-decoration: none;
-            font-size: 0.95rem;
-        }
-        .back-link:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <meta name="author" content="César Ruiz Rodríguez">
+    <title>Acerca del Simulador de Punción Talonaria</title>
+    <link href="estilos.css" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <a class="back-link" href="puncion_talon.html">&larr; Volver al simulador</a>
-        <h1>Acerca de este simulador</h1>
-        <p>Este simulador está diseñado para enseñar el procedimiento de punción talonaria en neonatos de manera segura y educativa. Incluye pasos detallados con imágenes ilustrativas para guiar a los estudiantes de enfermería y profesionales de la salud.</p>
-        <p>Desarrollado por el Centro de simulación de la FCCS de la UPNA.</p>
+        <h1>Acerca de este simulador: producción</h1>
+        <p style="text-align:center">Diseñado y producido por el Centro de Simulación de la FCCS de la UPNA.</p>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-container">
+                    <img class="step-img" src="img/escaner3d.jpeg" alt="Materiales médicos">
+                    <div class="step-text">
+                        <strong>Obtención del modelo de pie anatómico de neonato: </strong> Se obtuvo un modelo anatómico de pie de neonato a través de escaneo 3D de un pie perteneciente a otro simulador, utilizando tecnología de escaneo láser para capturar con precisión las formas y detalles anatómicos.
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div class="step">
+                <div class="step-container">
+                    <img class="step-img" src="img/Fusion360.png" alt="Limpieza del área">
+                    <div class="step-text">
+                        <strong>Diseño del molde negativo: </strong> Utilizando el archivo del modelo 3D del pie, se diseñó un molde negativo utilizando el software Fusion 360. Este molde se utilizó para crear la forma del simulador de punción talonaria.
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div class="step">
+                <div class="step-container">
+                    <img class="step-img" src="img/puncion1.jpg" alt="Punción con lanceta">
+                    <div class="step-text">
+                        <strong>Impresión del molde negativo: </strong> Se fabricó el molde negativo mediante fabricación aditiva en PLA utilizando una impresora 3D Prusa MK4S
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div class="step">
+                <div class="step-container">
+                    <img class="step-img" src="img/puncion2.jpg" alt="Recogida de sangre">
+                    <div class="step-text">
+                        <strong>Fabricación del cuerpo del simulador</strong> Se inyecto silicona a presión en el molde para asegurarse de que la silicona líquida se ajustara perfectamente a las paredes del mismo durante su curado.
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <br>
+            <div class="step">
+                <div class="step-container">
+                    <img class="step-img" src="img/puncion3.jpg" alt="Aplicación de presión">
+                    <div class="step-text">
+                        <strong>Rellenado de sangre y sellado</strong> Se llenó el interior del talón del neonato con una mezcla de agua y colorante rojo para simular la sangre, y se selló el talón para evitar fugas.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <a href="index.html" class="about-btn">Lista de simuladores marca UPNA</a>
+
+        <h2>Centro de simulación de la FCCS de la UPNA</h2>
+        <p class="footer-title">Información de contacto: </p>
+        <p>📧 Email: unidadeducacion.salud@unavarra.es</p>
+        <p>📞 Teléfono: +34 948 16 6206</p>
+        <p>📍 Edificio Facultad de Ciencias de la Salud, Avda Barañain s/n 2ªplanta sala 29, Pamplona</p>
+        <p>🌐 Web: <a href="https://www.unavarra.es/sites/fac-cienciasdelasalud/la-facultad/unidad-de-educacion-salud.html" target="_blank">https://www.unavarra.es/sites/fac-cienciasdelasalud/la-facultad/unidad-de-educacion-salud.html</a></p>
+        <img src="img/upna.png" alt="Logo UPNA" class="footer-logo">
     </div>
 </body>
-</html></content>
-<parameter name="filePath">c:\Users\cesar\OneDrive - UPNA\Desktop\TFG\html\puncion_talon_about.html
+</html>
